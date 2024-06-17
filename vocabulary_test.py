@@ -15,12 +15,12 @@ def main():
         words_sentences = {}
     words_explaination = {}
     # user can choose which function they want to use, including inputting new words, having quiz and delete words
-    function_option = input("Enter 1 to input new word. Enter 2 to take quizz. Enter 3 to delete word.: ")
+    function_option = input("Enter 1 to input new word. Enter 2 to take quiz. Enter 3 to delete word.: ")
     while function_option != "1" and function_option != "2": # make sure user only enter 1 or 2
         if function_option == "3":
             break
         print("Please enter 1 or 2 or 3")
-        function_option = input("Enter 1 to input new word. Enter 2 to take quizz. Enter 3 to delete word.: ")
+        function_option = input("Enter 1 to input new word. Enter 2 to take quiz. Enter 3 to delete word.: ")
     if function_option == "1":
         input_new_words(words_sentences, words_explaination)
     elif function_option == "2":
